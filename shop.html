@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("SP5-WWOk8PSPbPscg");
+      })();
+    </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body class="light-mode" >
+    <div class="all">
+      <div id="header">
+        <div class="doi">
+        <div class="header active-nav-bar" id="doi">
+          <div class="nav-bar">
+            <div class="brand">
+              <a href="#prezentare" class="control active-btn" data-id="sectiunea1" data-navbar="unu" data-buton="buton1"> 
+                <div class="logo_box">
+                  <img class="logo" src="img/logo.jpg">
+                  <h1 class="logo_text">Edico</h1>
+                </div>
+              </a>
+            </div>
+            <div class="nav-list">
+              <div class="hamburger"><div class="bar"></div></div>
+              <ul>
+                <li><a href="#hero" class="control active-btn" data-id="sectiunea1" data-navbar="unu" data-buton="buton1">Prezentare</a></li>
+                <li><a href="#shop" class="control active-btn" data-id="sectiunea2" data-navbar="doi" data-buton="buton2">Magazin</a></li>
+                <li><a href="#contact" class="control active-btn" data-id="sectiunea3" data-navbar="trei" data-buton="buton3">Comandă</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <section id="sectiunea2" class="active-nav-bar">
+        <div class="shop section" id="shop">
+          <div class="container-shop">
+            <section class="shop section" id="shop">
+              <div class="main-title">
+                <h2>
+                  Care <span> pachet</span
+                  > ți se potrivește?<span class="bg-text">Date generale</span>
+                </h2>
+              </div>
+              <div class="shop_container_produse">
+              <div class="shop_filters">
+                <div class="domain_choose">
+                  <span class="filtru active_shop">Biologie</span>
+                  <span class="filtru black">Chimie</span>
+                  <span class="filtru black">Fizica</span>
+                  <span class="filtru black">Accesorii</span>
+                </div>
+              </div>
+              <div class="shop_filters2">
+                <div class="shopmenu">
+                  <span class="shop_item active_shop" data-filter="all">Toate</span>
+                  <span class="shop_item black" data-filter=".solo">Singular</span>
+                  <span class="shop_item black" data-filter=".pachet">Pachete</span>
+                </div>
+              </div>
+              <div class="spatiu_shop">
+              <div id="biologie" class="active_filtru">
+                <div class="shop_container1 grid">
+                  <div class="shop_card mix solo">
+                    <img src="./img/produs1.png" alt="" class="shop_img" />
+                    <h3 class="shop_title">Introducere in anatomie și fiziologie</h3>
+                    <div class="shop_card_flex">
+                          <div class="pret">42.00 Ron</div>
+                          <div class="add-to-cart" data-name="Introducere in anatomie și fiziologie" data-price="42.00" data-type="Biologie" data-index="1">
+                          <div class="icon-cart" style="float: left">
+                            <div class="cart-line-1" style="background-color: #ffffff"></div>
+                            <div class="cart-line-2" style="background-color: #ffffff"></div>
+                            <div class="cart-line-3" style="background-color: #ffffff"></div>
+                            <div class="cart-wheel" style="background-color: #ffffff"></div>
+                          </div>
+                          </div>
+                    </div>
+                    <div class="produs_item-details">
+                      <h3 class="details_title">Ce Găsești în Pachetul Nostru?</h3>
+                      <p class="details_description">
+                        <b>78 de flashcards detaliate</b>: Fiecare flashcard conține informații cheie, întrebări și răspunsuri, pentru o învățare eficientă.
+                      </p>
+                      <ul class="details_info">
+                        <li><b>Structură Logică</b> - <span>Informația este organizată într-o secvență logică, ușor de urmărit.</span></li>
+                        <li><b>Design Atrăgător</b> - <span>Flashcardurile noastre nu sunt doar utile, ci și plăcute din punct de vedere vizual.</span></li>
+                        <li><b>Din ce manual și capitol?</b></li>
+                        <ul>
+                          <li>•	Manual Barron’s</li>
+                          <li>•	Capitolul 1 – Introducere în anatomie și fiziologie</li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="shop_card mix solo">
+                    <img src="./img/produs2.png" alt="" class="shop_img" />
+                    <h3 class="shop_title">Celulele și fiziologia celulară</h3>
+                    <br>
+                    <div class="shop_card_flex">
+                      <div class="pret">45.00 Ron</div>
+                      <div class="add-to-cart" data-name="Celulele și fiziologia celulară" data-price="45.00" data-type="Biologie" data-index="2">
+                      <div class="icon-cart" style="float: left">
+                        <div class="cart-line-1" style="background-color: #ffffff"></div>
+                        <div class="cart-line-2" style="background-color: #ffffff"></div>
+                        <div class="cart-line-3" style="background-color: #ffffff"></div>
+                        <div class="cart-wheel" style="background-color: #ffffff"></div>
+                      </div>
+                      </div>
+                </div>
+                <div class="produs_item-details">
+                  <h3 class="details_title">Ce Găsești în Pachetul Nostru?</h3>
+                  <p class="details_description">
+                    <b>84 de flashcards detaliate</b>: Fiecare flashcard conține informații cheie, întrebări și răspunsuri, pentru o învățare eficientă.
+                  </p>
+                  <ul class="details_info">
+                    <li><b>Structură Logică</b> - <span>Informația este organizată într-o secvență logică, ușor de urmărit.</span></li>
+                    <li><b>Design Atrăgător</b> - <span>Flashcardurile noastre nu sunt doar utile, ci și plăcute din punct de vedere vizual.</span></li>
+                    <li><b>Din ce manual și capitol?</b></li>
+                    <ul>
+                      <li>•	Manual Barron’s</li>
+                      <li>•	Capitolul 3 – Celulele și fiziologia celulară</li>
+                    </ul>
+                  </ul>
+                </div>
+                  </div>
+                  <div class="shop_card mix solo">
+                    <img src="./img/produs3.png" alt="" class="shop_img" />
+                    <h3 class="shop_title">Oasele și articulațiile</h3>
+                    <br>
+                    <div class="shop_card_flex">
+                      <div class="pret">50.00 Ron</div>
+                      <div class="add-to-cart" data-name="Oasele și articulațiile" data-price="50.00" data-type="Biologie" data-index="3">
+                      <div class="icon-cart" style="float: left">
+                        <div class="cart-line-1" style="background-color: #ffffff"></div>
+                        <div class="cart-line-2" style="background-color: #ffffff"></div>
+                        <div class="cart-line-3" style="background-color: #ffffff"></div>
+                        <div class="cart-wheel" style="background-color: #ffffff"></div>
+                      </div>
+                      </div>
+                    </div>
+                <div class="produs_item-details">
+                  <h3 class="details_title">Ce Găsești în Pachetul Nostru?</h3>
+                  <p class="details_description">
+                    <b>96  de flashcards detaliate</b>: Fiecare flashcard conține informații cheie, întrebări și răspunsuri, pentru o învățare eficientă.
+                  </p>
+                  <ul class="details_info">
+                    <li><b>Structură Logică</b> - <span>Informația este organizată într-o secvență logică, ușor de urmărit.</span></li>
+                    <li><b>Design Atrăgător</b> - <span>Flashcardurile noastre nu sunt doar utile, ci și plăcute din punct de vedere vizual.</span></li>
+                    <li><b>Din ce manual și capitol?</b></li>
+                    <ul>
+                      <li>•	Manual Barron’s</li>
+                      <li>•	Capitolul 6 – Oasele și articulațiile</li>
+                    </ul>
+                  </ul>
+                </div>
+                  </div>
+                  <div class="shop_card mix pachet">
+                    <img src="./img/produs4.png" alt="" class="shop_img" />
+                    <h3 class="shop_title">Sistemul nervos Barron’s – pachet</h3>
+                    <br>
+                    <div class="shop_card_flex">
+                      <div class="pret">89.00 Ron</div>
+                      <div class="add-to-cart" data-name="Sistemul nervos Barron’s – pachet" data-price="89.00" data-type="Biologie" data-index="4">
+                      <div class="icon-cart" style="float: left">
+                        <div class="cart-line-1" style="background-color: #ffffff"></div>
+                        <div class="cart-line-2" style="background-color: #ffffff"></div>
+                        <div class="cart-line-3" style="background-color: #ffffff"></div>
+                        <div class="cart-wheel" style="background-color: #ffffff"></div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="produs_item-details">
+                      <h3 class="details_title">Ce Găsești în Pachetul Nostru?</h3>
+                      <p class="details_description">
+                        <b>295  de flashcards detaliate</b>: Fiecare flashcard conține informații cheie, întrebări și răspunsuri, pentru o învățare eficientă.
+                      </p>
+                      <ul class="details_info">
+                        <li><b>Structură Logică</b> - <span>Informația este organizată într-o secvență logică, ușor de urmărit.</span></li>
+                        <li><b>Design Atrăgător</b> - <span>Flashcardurile noastre nu sunt doar utile, ci și plăcute din punct de vedere vizual.</span></li>
+                        <li><b>Din ce manual și capitol?</b></li>
+                        <ul>
+                          <li>•	Manual Barron’s</li>
+                          <li>•	Capitolul 10 - Țesutul nervos (149 flashcards)</li>
+                          <li>•	Capitolul 11 - Organizarea sistemului nervos (146 flashcards)</li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="shop_card mix pachet">
+                    <img src="./img/produs5.png" alt="" class="shop_img" />
+                    <h3 class="shop_title">Sistemul nervos Corint – pachet</h3>
+                    <br>
+                    <div class="shop_card_flex">
+                      <div class="pret">89.00 Ron</div>
+                      <div class="add-to-cart" data-name="Sistemul nervos Corint – pachet" data-price="89.00" data-type="Biologie" data-index="5">
+                      <div class="icon-cart" style="float: left">
+                        <div class="cart-line-1" style="background-color: #ffffff"></div>
+                        <div class="cart-line-2" style="background-color: #ffffff"></div>
+                        <div class="cart-line-3" style="background-color: #ffffff"></div>
+                        <div class="cart-wheel" style="background-color: #ffffff"></div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="produs_item-details">
+                      <h3 class="details_title">Ce Găsești în Pachetul Nostru?</h3>
+                      <p class="details_description">
+                        <b>267  de flashcards detaliate</b>: Fiecare flashcard conține informații cheie, întrebări și răspunsuri, pentru o învățare eficientă.
+                      </p>
+                      <ul class="details_info">
+                        <li><b>Structură Logică</b> - <span>Informația este organizată într-o secvență logică, ușor de urmărit.</span></li>
+                        <li><b>Design Atrăgător</b> - <span>Flashcardurile noastre nu sunt doar utile, ci și plăcute din punct de vedere vizual.</span></li>
+                        <li><b>Din ce manual și capitol?</b></li>
+                        <ul>
+                          <li>•	Manual Corint</li>
+                          <li>•	Capitole – Sistemul nervos, Măduva spinării, Encefalul, Sistemul nervos vegetativ</li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="shop_card mix pachet">
+                    <img src="./img/produs6.png" alt="" class="shop_img" />
+                    <h3 class="shop_title">Pachet începător Capitolele 1+3</h3>
+                    <br>
+                    <div class="shop_card_flex">
+                      <div class="pret">58.00 Ron</div>
+                      <div class="add-to-cart" data-name="Pachet începător Capitolele 1+3" data-price="58.00" data-type="Biologie" data-index="6">
+                      <div class="icon-cart" style="float: left">
+                        <div class="cart-line-1" style="background-color: #ffffff"></div>
+                        <div class="cart-line-2" style="background-color: #ffffff"></div>
+                        <div class="cart-line-3" style="background-color: #ffffff"></div>
+                        <div class="cart-wheel" style="background-color: #ffffff"></div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="produs_item-details">
+                      <h3 class="details_title">Ce Găsești în Pachetul Nostru?</h3>
+                      <p class="details_description">
+                        <b>162  de flashcards detaliate</b>: Fiecare flashcard conține informații cheie, întrebări și răspunsuri, pentru o învățare eficientă.
+                      </p>
+                      <ul class="details_info">
+                        <li><b>Structură Logică</b> - <span>Informația este organizată într-o secvență logică, ușor de urmărit.</span></li>
+                        <li><b>Design Atrăgător</b> - <span>Flashcardurile noastre nu sunt doar utile, ci și plăcute din punct de vedere vizual.</span></li>
+                        <li><b>Din ce manual și capitol?</b></li>
+                        <ul>
+                          <li>•	Manual Barron’s</li>
+                          <li>•	Capitolul 1 – Introducere în anatomie și fiziologie</li>
+                          <li>•	Capitolul 3 – Celulele și fiziologia celulară</li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="chimie" class="disable_filtru">
+                <div class="shop_container2">
+                  <div class="curand">În curând...</div>
+                </div>
+              </div>
+              <div id="fizica" class="disable_filtru">
+                <div class="shop_container3">
+                  <div class="curand">În curând...</div>
+                </div>
+              </div>
+              <div id="accesorii" class="disable_filtru">
+                  <div class="shop_container4 grid">
+                    <div class="shop_card mix solo">
+                      <img src="./img/Sticky_Notes.png" alt="" class="shop_img" />
+                      <h3 class="shop_title">Sticky Notes Transparente- <br>50 de bucați</h3>
+                      <div class="shop_card_flex">
+                            <div class="pret">11.00 Ron</div>
+                            <div class="add-to-cart" data-name="Sticky Notes Transparente" data-price="11.00" data-type="Accesorii" data-index="7">
+                            <div class="icon-cart" style="float: left">
+                              <div class="cart-line-1" style="background-color: #ffffff"></div>
+                              <div class="cart-line-2" style="background-color: #ffffff"></div>
+                              <div class="cart-line-3" style="background-color: #ffffff"></div>
+                              <div class="cart-wheel" style="background-color: #ffffff"></div>
+                            </div>
+                            </div>
+                      </div>
+                      <div class="produs_item-details">
+                        <h3 class="details_title">Ce Găsești în Pachetul Nostru?</h3>
+                        <p class="details_description">
+                          <b>50 de bucați</b>: Fiecare Sticky Note te va ajuta să iți notezi informația esențială.
+                        </p>
+                        <h3 class="details_title">Descriere:</h3>
+                        <p class="details_description">
+                          &emsp;Sticky Notes Transparente reprezintă o modalitate ingenioasă de a-ți organiza ideile, sarcinile și desenele într-un mod simplu și vizual. Datorită transparenței, poți lipi aceste notițe în locurile potrivite și le poți vedea cu ușurință, fără a acoperi informații importante. Simplu, eficient și estetic.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+           </div> 
+            </section>  
+          </div>
+        </section>
+      <div id="footer">
+        <div class="footer container">
+          <div class="brand">
+            <h1><span>M</span>edico<span>F</span>lash<span>C</span>ards</h1>
+          </div>
+          <h2>Învața ușor și rapid!</h2>
+          <div class="social-icon">
+            <div class="social-item">
+              <a href="https://www.instagram.com/medico_flash_cards/" target="_blank" rel="noopener noreferrer"
+                ><img
+                  src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"
+              /></a>
+            </div>
+            <div class="social-item">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=medicoflashcards1@gmail.com" target="_blank"
+                ><img
+                  src="https://img.icons8.com/bubbles/100/000000/gmail-new.png"
+              /></a>
+            </div>
+            <div class="social-item">
+              <a href="https://www.tiktok.com/@medico_flashcards?_t=8gZCKVCehqz&_r=1" target="_blank"
+                ><img
+                  src="https://img.icons8.com/bubbles/100/000000/tiktok.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="controls">
+        <a href="#hero" class="control active-btn" id="buton1" data-id="sectiunea1" data-navbar="unu" data-buton="buton1">
+          <i class="fas fa-home"></i>
+        </a>
+        <a href="#shop" class="control" id="buton2" data-id="sectiunea2" data-navbar="doi" data-buton="buton2">
+          <i class="fas fa-briefcase"></i>
+        </a>
+        <a href="#contact" class="control" id="buton3" data-id="sectiunea3" data-navbar="trei" data-buton="buton3">
+          <i class="fas fa-envelope-open"></i>
+        </a>
+      </div>
+      <div id="tray">
+        <div class="count">
+          <span class="total-count"></span>
+        </div>
+        <i class="fa fa-shopping-basket fa-2x"></i>
+      </div>
+      <div class="produs_popup_shop">
+        <div class="shopping-cart">
+          <div class="title">
+            <p>Coșul de cumpărături</p>
+            <span class="shop_produs_popup-close"><i class="uil-times"></i></span> 
+          </div>
+          <table class="show-cart table">
+                  
+          </table>
+          <div class="total">
+            <div class="total-box">
+              <div class="total-price-shop">Preț total: <span class="subtotal"></span> Ron</div>
+              <a href="#contact" class="control button-buy" data-id="sectiunea3" data-navbar="trei" data-buton="buton3">Trimite comanda</a>
+            </div>
+              <button class="clear-cart button-clear_all" role="button">Șterge tot</button>
+          </div>
+          
+        </div>
+      </div>
+      <div class="produs_popup">
+        <div class="produs_popup-inner">
+          <div class="produs_popup-content grid">
+            <span class="produs_popup-close"><i class="uil-times"></i></span>
+            <div class="pp_thumbnail">
+              <img
+                src="./img/x.png"
+                alt=""
+                class="produs_popup-img"
+              />
+            </div>
+            <div class="produs_popup-info">
+              <div class="produs_popup-body">
+                <h3 class="details_title"></h3>
+                <p class="details_description">
+                  <b>78 de flashcards detaliate</b>: Fiecare flashcard conține informații cheie, întrebări și răspunsuri, pentru o învățare eficientă.
+                </p>
+                <ul class="details_info">
+                  <li><b>Structură Logică</b> - <span>Informația este organizată într-o secvență logică, ușor de urmărit.</span></li>
+                  <li><b>Design Atrăgător</b> - <span>Flashcardurile noastre nu sunt doar utile, ci și plăcute din punct de vedere vizual.</span></li>
+                  <br>
+                  <li><b>Din ce manual și capitol?</b></li>
+                  <ul>
+                    <li>•	Manual Barron’s</li>
+                    <li>•	Capitolul 1 – Introducere în anatomie și fiziologie</li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Footer -->
+      <script src="./app.js"></script>
+      <script src="./mixitup.min.js"></script>
+      <script src="./swiper-bundle.min.js"></script>
+      <script src="./main.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="./shoping-cart.js"></script>
+    </div>
+  </body>
+</html>
