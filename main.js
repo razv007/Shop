@@ -44,6 +44,12 @@ const close_shop = document.getElementsByClassName("shop_produs_popup-close");
 const shopping_cart =document.getElementsByClassName("shopping-cart");
 const produs_description =document.getElementsByClassName("produs_popup-inner");
 const linkshop = document.querySelectorAll(".shop_item");
+const footer = document.getElementById("footer");
+
+setInterval(() => {
+    var active_filtru = document.getElementsByClassName("active_filtru");
+    footer.style.marginTop = active_filtru[0].scrollHeight + 'px';
+}, 10);
 
 function activeshop() {
   linkshop.forEach((l) => l.classList.remove("active_shop"));
@@ -55,6 +61,7 @@ var ok2=1;
 filtre[0].addEventListener('click', function () {
     console.log("wow");
     biologie.classList.add('active_filtru');
+    biologie.style.display = 'flex';
     chimie.classList.add('disable_filtru');
     fizica.classList.add('disable_filtru');
     accesorii.classList.add('disable_filtru');
@@ -76,6 +83,7 @@ filtre[0].addEventListener('click', function () {
   filtre[1].addEventListener('click', function () {
     chimie.classList.add('active_filtru');
     biologie.classList.add('disable_filtru');
+    biologie.style.display = 'none';
     fizica.classList.add('disable_filtru');
     accesorii.classList.add('disable_filtru');
     chimie.classList.remove('disable_filtru');
@@ -97,6 +105,7 @@ filtre[0].addEventListener('click', function () {
     fizica.classList.add('active_filtru');
     chimie.classList.add('disable_filtru');
     biologie.classList.add('disable_filtru');
+    biologie.style.display = 'none';
     accesorii.classList.add('disable_filtru');
     fizica.classList.remove('disable_filtru');
     chimie.classList.remove('active_filtru');
@@ -111,12 +120,13 @@ filtre[0].addEventListener('click', function () {
     filtre[0].classList.remove('active_shop');
     filtre[3].classList.remove('active_shop');
     shop_filter[0].style.backgroundColor="#0bc47488";
-  }, false);
+}, false);
 
   filtre[3].addEventListener('click', function () {
     fizica.classList.add('disable_filtru');
     chimie.classList.add('disable_filtru');
     biologie.classList.add('disable_filtru');
+    biologie.style.display = 'none';
     accesorii.classList.add('active_filtru');
     fizica.classList.remove('active_filtru');
     chimie.classList.remove('active_filtru');
@@ -131,7 +141,7 @@ filtre[0].addEventListener('click', function () {
     filtre[0].classList.remove('active_shop');
     filtre[3].classList.remove('disable_shop');
     shop_filter[0].style.backgroundColor="#f09f0888";
-  }, false);
+}, false);
 
   linkshop[0].addEventListener('click', function () {
     linkshop[0].classList.add('active_shop');
