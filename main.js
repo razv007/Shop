@@ -55,13 +55,36 @@ function activeshop() {
   linkshop.forEach((l) => l.classList.remove("active_shop"));
   this.classList.add("active_shop");
 }
+
+function toggle_display_for(element) {
+    biologie.style.display = 'none';
+    chimie.style.display = 'none';
+    fizica.style.display = 'none';
+    accesorii.style.display = 'none';
+
+    switch(element) {
+        case 'biologie':
+            biologie.style.display = 'flex';
+            break;
+        case 'chimie':
+            chimie.style.display = 'flex';
+            break;
+        case 'fizica':
+            fizica.style.display = 'flex';
+            break;
+        case accesorii:
+            accesorii.style.display = 'flex';
+            break;
+    }
+}
+
 linkshop.forEach((l) => l.addEventListener("click", activeshop));
 var ok=0;
 var ok2=1;
 filtre[0].addEventListener('click', function () {
     console.log("wow");
     biologie.classList.add('active_filtru');
-    biologie.style.display = 'flex';
+    toggle_display_for('biologie');
     chimie.classList.add('disable_filtru');
     fizica.classList.add('disable_filtru');
     accesorii.classList.add('disable_filtru');
@@ -83,7 +106,7 @@ filtre[0].addEventListener('click', function () {
   filtre[1].addEventListener('click', function () {
     chimie.classList.add('active_filtru');
     biologie.classList.add('disable_filtru');
-    biologie.style.display = 'none';
+    toggle_display_for('chimie');
     fizica.classList.add('disable_filtru');
     accesorii.classList.add('disable_filtru');
     chimie.classList.remove('disable_filtru');
@@ -105,7 +128,7 @@ filtre[0].addEventListener('click', function () {
     fizica.classList.add('active_filtru');
     chimie.classList.add('disable_filtru');
     biologie.classList.add('disable_filtru');
-    biologie.style.display = 'none';
+    toggle_display_for('fizica');
     accesorii.classList.add('disable_filtru');
     fizica.classList.remove('disable_filtru');
     chimie.classList.remove('active_filtru');
@@ -126,8 +149,8 @@ filtre[0].addEventListener('click', function () {
     fizica.classList.add('disable_filtru');
     chimie.classList.add('disable_filtru');
     biologie.classList.add('disable_filtru');
-    biologie.style.display = 'none';
     accesorii.classList.add('active_filtru');
+    toggle_display_for('accesorii');
     fizica.classList.remove('active_filtru');
     chimie.classList.remove('active_filtru');
     biologie.classList.remove('active_filtru');
